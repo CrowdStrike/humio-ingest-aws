@@ -1,6 +1,10 @@
 name: APPROVE
  
-on: pull_request # run on pull request events
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
  
 permissions:
  pull-requests: write # grant write permission on the pull-requests endpoint
